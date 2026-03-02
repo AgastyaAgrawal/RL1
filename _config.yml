@@ -1,0 +1,14 @@
+title: RL Project Analysis
+author: Agastya Agrawal
+copyright: "2026 Agastya Agrawal"
+execute:
+  execute_notebooks: off 
+
+repository:
+  url: https://github.com/AgastyaAgrawal/AgastyaAgrawal.github.io
+  path_to_book: "" 
+  branch: main
+
+launch_buttons:
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"

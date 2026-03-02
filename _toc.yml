@@ -1,0 +1,12 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: Theory & Notes
+    chapters:
+      - file: notes/background
+      
+  - caption: Code & Analysis
+    chapters:
+      - file: agastya.ug2024(RL1)/analysis
+      - file: agastya.ug2024(RL1)/analysis2

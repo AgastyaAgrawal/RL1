@@ -1,0 +1,23 @@
+name: deploy-book
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy-book:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+    - run: pip install -r requirements.txt
+    - run: pip install "jupyter-book<1.0.0"
+    - run: jupyter-book build .
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: _build/html
+    - uses: actions/deploy-pages@v4
